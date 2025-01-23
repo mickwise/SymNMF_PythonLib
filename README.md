@@ -52,4 +52,30 @@ This project implements the **Symmetric Non-negative Matrix Factorization (SymNM
 ## Analyze clustering
 1. Compare SymNMF with K-Means using silhouette scores:
    ```bash
-  python3 analysis.py k input_data.txt
+   python3 analysis.py k input_data.txt
+   
+## File structure 
+symnmf.py: Python interface for the SymNMF algorithm.
+symnmf.c: C implementation of the algorithm.
+symnmfmodule.c: Python C API wrapper.
+symnmf.h: Header file with function prototypes.
+memory_management.c/h: Memory manager to safely allocate and free memory.
+symnmf_ops.c/h: Utility methods for matrix operations and SymNMF optimization.
+kmeans.py: Python implementation of the K-Means algorithm.
+analysis.py: Script for analyzing clustering results.
+setup.py: Build script for the Python C extension.
+Makefile: Script for compiling the C implementation.
+matrix.h: Header defining the matrix structure for mathematical operations.
+
+## Output
+The program outputs matrices in a comma-separated format:
+    1. Each row is on a new line.
+    2. Numbers are formatted to 4 decimal places
+    3. Example: 0.0600,0.0100
+                0.0100,0.0500
+                0.0100,0.0400
+                0.0200,0.0400
+                0.0500,0.0200
+
+## License
+This project is licensed under the MIT License.
