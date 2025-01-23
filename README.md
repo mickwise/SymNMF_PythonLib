@@ -38,16 +38,18 @@ This project implements the **Symmetric Non-negative Matrix Factorization (SymNM
 
 ## Other goals
 1. Compute the similarity matrix:
-  ```bash
-  python3 symnmf.py k sym input_data.txt
-2. Compute the diagonal degree matrix:
-  ```bash
-  python3 symnmf.py k ddg input_data.txt
-3. Compute the Normalized similarity matrix:
-  ```bash
-  python3 symnmf.py k norm input_data.txt
+   ```bash
+   python3 symnmf.py k sym input_data.txt
 
-**## Analyze clustering**
+2. Compute the diagonal degree matrix:
+   ```bash
+   python3 symnmf.py k ddg input_data.txt
+
+3. Compute the Normalized similarity matrix:
+   ```bash
+   python3 symnmf.py k norm input_data.txt
+
+## Analyze clustering
 1. Compare SymNMF with K-Means using silhouette scores:
    ```bash
   python3 analysis.py k input_data.txt
