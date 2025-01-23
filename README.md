@@ -82,5 +82,4 @@ The program outputs matrices in a comma-separated format:
 0.0200,0.0400
 0.0500,0.0200
 
-## License
-This project is licensed under the MIT License.
+
