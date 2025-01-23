@@ -40,11 +40,9 @@ This project implements the **Symmetric Non-negative Matrix Factorization (SymNM
 1. Compute the similarity matrix:
   ```bash
   python3 symnmf.py k sym input_data.txt
-
 2. Compute the diagonal degree matrix:
   ```bash
   python3 symnmf.py k ddg input_data.txt
-
 3. Compute the Normalized similarity matrix:
   ```bash
   python3 symnmf.py k norm input_data.txt
