@@ -50,3 +50,19 @@ modules.order
 Module.symvers
 Mkfile.old
 dkms.conf
+
+# Python-specific
+__pycache__/
+*.py[cod]
+*.egg
+*.egg-info/
+dist/
+build/
+*.pyo
+
+# IDE and system files
+.DS_Store
+.vscode/
+.idea/
+Thumbs.db
+*.swp
